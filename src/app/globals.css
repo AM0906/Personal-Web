@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #F9F9F7;
+    --foreground: #1a1a1b;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #F9F9F7;
+    color: #1a1a1b;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* 3D tile flip utilities */
+  .perspective-300 {
+    perspective: 300px;
+  }
+
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+
+  .rotate-x-90 {
+    transform: rotateX(90deg);
+  }
+
+  .rotate-x-neg-90 {
+    transform: rotateX(-90deg);
+  }
+
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+
+  /* NYT newspaper rule */
+  .masthead-rule {
+    @apply border-t-[3px] border-nyt-text w-full;
+  }
+
+  .masthead-rule-thin {
+    @apply border-t border-nyt-text w-full;
+  }
+
+  /* Wordle tile transition */
+  .tile-transition {
+    transition: transform 0.25s ease-in-out;
+  }
+
+  /* Card flip container */
+  .card-flip-inner {
+    transition: transform 0.6s ease-in-out;
+    transform-style: preserve-3d;
+  }
+
+  .card-flip-inner.flipped {
+    transform: rotateY(180deg);
+  }
+
+  .card-face {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+
+  .card-face-back {
+    transform: rotateY(180deg);
+  }
+}
