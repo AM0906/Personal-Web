@@ -13,10 +13,10 @@ const STATE_COLORS = {
 };
 
 const CHIPS = [
+  "SharkNinja R&D",
   "Rocket Propulsion",
   "Dark Matter Research",
-  "CAD / FEA",
-  "3.94 GPA",
+  "3.93 GPA",
 ];
 
 export default function Hero() {
@@ -34,7 +34,7 @@ export default function Hero() {
 
         <div className="text-center mb-4">
           <p className="font-sans text-xs tracking-[0.25em] uppercase text-gray-500 mb-2">
-            Purdue University &bull; Aerospace Engineering &bull; Class of 2028
+            Purdue University &bull; Aerospace Engineering &bull; Class of 2029
           </p>
           <h1 className="font-serif text-5xl sm:text-7xl font-bold tracking-tight text-nyt-text leading-none mb-1">
             The Aarya Times
@@ -71,11 +71,11 @@ export default function Hero() {
         {/* Bio */}
         <div className="text-center max-w-2xl mx-auto mb-6">
           <p className="font-sans text-base sm:text-lg text-nyt-text leading-relaxed">
-            First-year Aerospace Engineering student at Purdue University with a{" "}
-            <strong>3.94 GPA</strong>. Currently leading LOx inducer hardware for a{" "}
+            Aerospace Engineering student at Purdue University with a{" "}
+            <strong>3.93 GPA</strong>. Recently completed a mechanical R&D internship at{" "}
+            <strong>SharkNinja</strong> and currently leading LOx inducer hardware for a{" "}
             <strong>5,000 lbf turbopump rocket engine</strong> at PURPL. Published
-            dark matter researcher and NASA HAS alumnus seeking{" "}
-            <strong>summer 2026 engineering internships</strong>.
+            dark matter researcher and NASA HAS alumnus.
           </p>
         </div>
 

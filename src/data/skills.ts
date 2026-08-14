@@ -16,20 +16,22 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
   {
     category: "CAD / FEA",
     context:
-      "Used at PURPL to design the LOx inducer, run thermal expansion and margin-of-safety hand calculations, and perform FEA validation. Also used for model rocket design and NASA HAS mission CAD work.",
+      "Used at PURPL to design the LOx inducer, run thermal expansion and margin-of-safety hand calculations, and perform FEA validation. Also used for SharkNinja prototype design, model rocket design, and NASA HAS mission CAD work.",
     skills: [
       { name: "FUSION", displayName: "FUSION 360", proficiency: "expert" },
       { name: "NX", displayName: "NX 2306", proficiency: "expert" },
       { name: "ANSYS", displayName: "ANSYS", proficiency: "expert" },
+      { name: "SOLIDWORKS", displayName: "SOLIDWORKS", proficiency: "familiar" },
     ],
   },
   {
     category: "PROGRAMMING",
     context:
-      "Python used for dark matter ML analysis (published in MNRAS). MATLAB for coursework and signal analysis. Java from AP CS A. C from engineering coursework.",
+      "Python used for dark matter ML analysis (published in MNRAS) and SharkNinja data analysis. MATLAB for coursework and signal analysis. SQL for data workflows. Java from AP CS A. C from engineering coursework.",
     skills: [
       { name: "PYTHON", displayName: "PYTHON", proficiency: "expert" },
       { name: "MATLAB", displayName: "MATLAB", proficiency: "expert" },
+      { name: "SQL", displayName: "SQL", proficiency: "familiar" },
       { name: "JAVA", displayName: "JAVA", proficiency: "familiar" },
       { name: "C", displayName: "C", proficiency: "familiar" },
     ],

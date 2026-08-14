@@ -23,11 +23,11 @@ export const GROUPS: Group[] = [
     emoji: "🟨",
     colorClass: "bg-conn-yellow",
     textClass: "text-nyt-text",
-    description: "Building hardware that actually launches",
+    description: "Building hardware that actually works",
     bullets: [
-      "Leading LOx inducer hardware at PURPL for Marlin, a 5,000 lbf turbopump rocket engine scheduled for full system hot-fire in 2026.",
-      "Completed materials trade study selecting 316L Stainless Steel; validated design through first-principles hand calculations for safety margins and thermal expansion.",
-      "Created CAM toolpaths and machined complex inducer geometry on a 5-axis UMC 500 CNC mill.",
+      "Completed a mechanical R&D internship at SharkNinja's Frozen Treats Team — advanced a next-gen product from experimental development to production prototype through 100+ structured tests and 30+ 3D-printed iterations.",
+      "Leading LOx inducer hardware at PURPL for Marlin, a 5,000 lbf turbopump rocket engine; completed materials trade study selecting 316L Stainless Steel.",
+      "Created CAM toolpaths and machined complex inducer geometry on a 5-axis UMC 500 CNC mill; validated design through first-principles calculations and FEA.",
     ],
   },
   {
@@ -64,7 +64,7 @@ export const GROUPS: Group[] = [
     textClass: "text-white",
     description: "Outside the lab",
     bullets: [
-      "First-year student at Purdue University pursuing Aerospace Engineering with a 3.94 GPA, with plans to build rockets for a living.",
+      "Aerospace Engineering student at Purdue University with a 3.93 GPA, with plans to build rockets for a living.",
       "Avid astrophotographer — using the same curiosity that drove dark matter research to capture deep-sky objects from the ground.",
       "Tennis player, basketball player, and climber. Physical problem-solving informs how I approach engineering challenges.",
     ],
@@ -85,7 +85,7 @@ export const TILES: Tile[] = [
   { id: 9, word: "DARK MATTER", groupId: 1 },
   { id: 10, word: "150+ MEMBERS", groupId: 2 },
   { id: 11, word: "ASTROPHOTO", groupId: 3 },
-  { id: 12, word: "CAD / CNC", groupId: 0 },
+  { id: 12, word: "SHARKNINJA", groupId: 0 },
   { id: 13, word: "MNRAS", groupId: 1 },
   { id: 14, word: "MENTOR", groupId: 2 },
   { id: 15, word: "PURDUE", groupId: 3 },

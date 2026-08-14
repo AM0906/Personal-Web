@@ -39,7 +39,7 @@ const HEXAGONS: HexDef[] = [
   // Bottom
   { cx: 170, cy: 246, label: "RÉSUMÉ", fill: "#BA81C5", textFill: "#ffffff", href: "/resume.pdf", delay: 0.2 },
   // Bottom-left (decorative)
-  { cx: 92, cy: 198, label: "PURDUE", sublabel: "2028", fill: "#EFEFF6", textFill: "#1a1a1b", delay: 0.25 },
+  { cx: 92, cy: 198, label: "PURDUE", sublabel: "2029", fill: "#EFEFF6", textFill: "#1a1a1b", delay: 0.25 },
   // Top-left (decorative)
   { cx: 92, cy: 102, label: "FRISCO", sublabel: "TX", fill: "#EFEFF6", textFill: "#1a1a1b", delay: 0.3 },
 ];
@@ -134,7 +134,7 @@ export default function Contact() {
                 Aarya Mehta
               </h3>
               <p className="font-sans text-sm text-gray-500">
-                Purdue University — First Year Engineering (Pursuing Aerospace)
+                Purdue University — Aerospace Engineering, Class of 2029
                 <br />
                 West Lafayette, IN &bull; Frisco, TX
               </p>
@@ -164,8 +164,8 @@ export default function Contact() {
             </div>
 
             <p className="font-sans text-sm text-gray-400 border-l-2 border-tile-border pl-3">
-              Open to summer 2026 engineering internships — aerospace, propulsion,
-              structural analysis, or research. Based in the US, flexible on location.
+              Open to summer 2027 engineering internships — aerospace, propulsion,
+              mechanical R&D, or research. Based in the US, flexible on location.
             </p>
           </div>
         </div>

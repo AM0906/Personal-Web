@@ -14,6 +14,24 @@ export type ExperienceEntry = {
 export const EXPERIENCE: ExperienceEntry[] = [
   {
     number: 1,
+    role: "Mechanical R&D Engineering Intern",
+    org: "SharkNinja",
+    orgFull: "SharkNinja — Frozen Treats Team",
+    date: "May 2026 – August 2026",
+    clue: "Boston-based consumer appliance brand — think vacuums and kitchen gadgets — whose intern advanced a next-gen frozen treat product",
+    answer: "SHARK NINJA",
+    answerColor: "bg-conn-purple",
+    bullets: [
+      "Advanced a next-generation frozen treat product from experimental development to a production-representative prototype through mechanical design, quantitative testing, data analysis, and iterative optimization.",
+      "Executed hundreds of structured performance tests across 3 prototype iterations, contributing to a ~70% reduction in processing time while improving product performance and consistency.",
+      "Developed a data-driven framework to evaluate performance across 100+ tests, validating ~15 KPIs including voltage, current, torque, power, temperature, and product characteristics.",
+      "Built an Arduino-based data acquisition dashboard to automate collection and organization of test data across repeated experiments.",
+      "Led NTC thermistor calibration — developed test rig and experimental plan, collected hundreds of data points, and created a resistance-temperature correlation reducing measurement error from ~4°C to ~0.1°C.",
+      "Designed 6 CAD concepts and iterated through 30+ 3D-printed prototypes using reverse engineering and experimental results to select and refine design solutions.",
+    ],
+  },
+  {
+    number: 2,
     role: "LOx Inducer Manufacturing Responsible Engineer",
     org: "PURPL",
     orgFull: "Purdue Undergraduate Rocket Propulsion Lab",
@@ -30,7 +48,7 @@ export const EXPERIENCE: ExperienceEntry[] = [
     ],
   },
   {
-    number: 2,
+    number: 3,
     role: "Researcher / Senior Mentor",
     org: "NASA HAS",
     orgFull: "NASA High School Aerospace Scholars",
@@ -45,7 +63,7 @@ export const EXPERIENCE: ExperienceEntry[] = [
     ],
   },
   {
-    number: 3,
+    number: 4,
     role: "Co-President",
     org: "Mu Alpha Theta",
     orgFull: "Mu Alpha Theta — Math Honor Society",
@@ -63,33 +81,35 @@ export const EXPERIENCE: ExperienceEntry[] = [
 
 // Decorative crossword grid
 // 'B' = black blocker, uppercase letter = answer cell, '.' = empty white cell
-// Layout: PURPL across row 0; NASA down col 3 (rows 0-3); MATH across row 3; FEA down col 5 (rows 3-5)
+// Layout: SHARK across row 2; PURPL down col 4; NASA down col 1; MATH down col 3
+// Intersections: SHARK∩NASA at S(2,1), SHARK∩MATH at A(2,3), SHARK∩PURPL at R(2,4)
 //
-//   P  U  R  P  L  .  .
-//   .  .  .  A  .  .  .
-//   .  .  .  S  .  F  .
-//   M  A  T  A  .  E  .
-//   .  .  .  .  .  A  .
+//   .  N  .  .  P  .  .
+//   .  A  .  M  U  .  .
+//   .  S  H  A  R  K  .   ← SHARK across row 2
+//   .  A  .  T  P  .  .
+//   .  .  .  H  L  .  .
 //   B  B  B  B  B  B  B  ← blocker row
 //   .  .  .  .  .  .  .
 export const CROSSWORD_GRID: string[][] = [
-  ["P", "U", "R", "P", "L", ".", "."],
-  [".", ".", ".", "A", ".", ".", "."],
-  [".", ".", ".", "S", ".", "F", "."],
-  ["M", "A", "T", "A", ".", "E", "."],
-  [".", ".", ".", ".", ".", "A", "."],
+  [".", "N", ".", ".", "P", ".", "."],
+  [".", "A", ".", "M", "U", ".", "."],
+  [".", "S", "H", "A", "R", "K", "."],
+  [".", "A", ".", "T", "P", ".", "."],
+  [".", ".", ".", "H", "L", ".", "."],
   ["B", "B", "B", "B", "B", "B", "B"],
   [".", ".", ".", ".", ".", ".", "."],
 ];
 
 // Which cells belong to each answer (for highlight coloring)
+// SHARK is listed last so it overrides color at shared intersection cells
 export const CROSSWORD_HIGHLIGHTS: { row: number; col: number; color: string }[] = [
-  // PURPL (row 0, cols 0-4)
-  ...[0, 1, 2, 3, 4].map((col) => ({ row: 0, col, color: "bg-wordle-green" })),
-  // NASA (col 3, rows 0-3) — shares P with PURPL at [0][3]
-  ...[1, 2, 3].map((row) => ({ row, col: 3, color: "bg-conn-blue" })),
-  // MATH (row 3, cols 0-2) — shares A with NASA at [3][3]
-  ...[0, 1, 2].map((col) => ({ row: 3, col, color: "bg-conn-yellow" })),
-  // FEA (col 5, rows 2-4)
-  ...[2, 3, 4].map((row) => ({ row, col: 5, color: "bg-wordle-yellow" })),
+  // NASA (col 1, rows 0-3) — shares S with SHARK at [2][1]
+  ...[0, 1, 3].map((row) => ({ row, col: 1, color: "bg-conn-blue" })),
+  // MATH (col 3, rows 1-4) — shares A with SHARK at [2][3]
+  ...[1, 3, 4].map((row) => ({ row, col: 3, color: "bg-conn-yellow" })),
+  // PURPL (col 4, rows 0-4) — shares R with SHARK at [2][4]
+  ...[0, 1, 3, 4].map((row) => ({ row, col: 4, color: "bg-wordle-green" })),
+  // SHARK (row 2, cols 1-5) — overrides shared intersection cells
+  ...[1, 2, 3, 4, 5].map((col) => ({ row: 2, col, color: "bg-conn-purple" })),
 ];
